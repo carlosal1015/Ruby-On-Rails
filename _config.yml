@@ -1,5 +1,5 @@
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://carlosal1015.github.io/Ruby-On-Rails"
+baseurl: "/Ruby-On-Rails" # the subpath of your site, e.g. /blog
+url: "https://carlosal1015.github.io"
 author: Oromion
 title: Ruby on Rails's blog
 description: Ruby on Rails.
