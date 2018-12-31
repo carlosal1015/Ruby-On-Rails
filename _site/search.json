@@ -1,23 +1,13 @@
 [
 
 {
-"id": "-introduction-2018-12-25-finite_element_method",
+"id": "-introduction-2018-12-31-introduction",
 "title": "Introduction to Ruby language",
 "author": null,
 "tags": ["hello-world"],
-"url": "/introduction/2018/12/25/finite_element_method/",
-"date": "2018-12-25",
-"content": "Hilbert’s spacesSea  que contiene todos los vectores  con una sucesión infinita de componentes. Este espacio es actualmente muy grande cuando no existe control en el tamaño de las componentes . Una idea mucho mejor es mantener la definición familiar de longitud, usando la suma de los cuadrados, e incluir solo aquellos vectores que tengan una longitud finita.Esta serie infinita debe converger a una suma finita. Vectores con longitud finita pueden ser sumados, multiplicados por escalares, así ellos forman un espacio vectorial. En este espacio de Hilbert es la forma natural de crecer el n煤mero de dimensiones hasta el infinito, y al mismo tiempo mantener la geometría ordinaria de un espacio euclidiano. Las elipses serán elipsoides de dimensión infinita, y rectas perpendiculares serán exactamente como antes. Los vectores  y  son ortogonales cuando su producto interno es cero:Hat’s functionsfunction grafica_hat(j, a, b, n, s)% n segmentosx = linspace(a, b, n + 1);if j == 1    xx = [x(1), x(2), x(n + 1)];    yy = [1, 0, 0];else    if j == n        xx = [x(1), x(n), x(n + 1)];        yy = [0, 0, 1];    else        xx = [x(1), x(j - 1), x(j), x(j + 1), x(n + 1)];        yy = [0, 0, 1, 0, 0];    endendplot(xx, yy, s)shgend"
-}, 
-
-{
-"id": "-cpp-2018-12-24-introduction_cpp_programming",
-"title": "Introduction C++ Programming",
-"author": null,
-"tags": ["algorithms"],
-"url": "/cpp/2018/12/24/introduction_cpp_programming/",
-"date": "2018-12-24",
-"content": "An overview of computers and programming languagesUn breve resumen de la historia de las computadoras  El primer dispositivo conocido para llevar a cabo cálculos fue el ábaco.  En 1642, el filósofo francés y matemático Blaise Pascal inventó un dispositivo de cálculo llamado la Pascalina.  Luego en el siglo XVII, Gottfried von Leibniz inventó un dispositivo que podía sumar, restar, multiplicar y dividir  En 1819, Joseph Jacquard, un tejedor francés, descubrió que las instrucciones de tejer para sus telares se pueden almacenar en tarjetas con agujeros perforados.  A principios y mediados de 1800, Charles Babbage, un matemático inglés y científico físico, diseñó dos máquinas calculadoras: la diferencia entre la máquina diferencial y la máquina analítica.Minimal example#include &lt;iostream&gt;using namespace std;int main(){\tcout &lt;&lt; \"My first C++ program.\" &lt;&lt; endl;\treturn 0;}StrikethroughMistMathematics :+1:Let be  a function such that"
+"url": "/introduction/2018/12/31/introduction/",
+"date": "2018-12-31",
+"content": "Hilbert’s spacesSea  que contiene todos los vectores  con una sucesión infinita de componentes. Este espacio es actualmente muy grande cuando no existe control en el tamaño de las componentes . Una idea mucho mejor es mantener la definición familiar de longitud, usando la suma de los cuadrados, e incluir solo aquellos vectores que tengan una longitud finita.Esta serie infinita debe converger a una suma finita. Vectores con longitud finita pueden ser sumados, multiplicados por escalares, así ellos forman un espacio vectorial. En este espacio de Hilbert es la forma natural de crecer el n煤mero de dimensiones hasta el infinito, y al mismo tiempo mantener la geometría ordinaria de un espacio euclidiano. Las elipses serán elipsoides de dimensión infinita, y rectas perpendiculares serán exactamente como antes. Los vectores  y  son ortogonales cuando su producto interno es cero:Hat’s functionsputs 'Hello World'"
 }
 
 ]
