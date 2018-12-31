@@ -9,18 +9,59 @@ mathjax: "true"
 
 <!--more-->
 
-# Hilbert's spaces
+# What is the Ruby programming language?
 
-Sea $$\mathbb{R}^\infty$$ que contiene todos los vectores $$v=(v_1,v_2,\ldots)$$ con una sucesión infinita de componentes. Este espacio es actualmente muy grande cuando no existe control en el tamaño de las componentes $$v_j$$. Una idea mucho mejor es mantener la definición familiar de *longitud*, usando la suma de los cuadrados, e incluir solo aquellos vectores que tengan una **longitud finita**.
+Ruby is a dynamic programming language created by Yukihiro Matsumoto. Ruby was inspired by Lisp, Smalltalk, and Perl, but it uses the simple syntax of C and Java. Ruby is a object-oriented language, but it is also suitable for functional or procedural programming styles.
 
-$$
-\textbf{Longitud cuadrada}\quad \|v\|^2= v_1^2+v_2^2+v_3^2+\cdots
-$$
-
-Esta serie infinita debe converger a una suma finita. Vectores con longitud finita pueden ser sumados, multiplicados por escalares, así ellos forman un espacio vectorial. En este espacio de Hilbert es la forma natural de crecer el n煤mero de dimensiones hasta el infinito, y al mismo tiempo mantener la geometría ordinaria de un espacio euclidiano. Las elipses serán elipsoides de dimensión infinita, y rectas perpendiculares serán exactamente como antes. Los vectores $$v$$ y $$w$$ son ortogonales cuando su producto interno es cero:
-
-## Hat's functions
+> Ruby is designed to make programmers happy.
 
 {% highlight ruby %}
-puts 'Hello World'
+# Hello World
+1.class		# => Integer
+0.0.class	# => Float
+true.class	# => TrueClass
+false.class	# => FalseClass
+nil.class	# => NilClass
+{% endhighlight %}
+
+In Ruby, parentheses are usually optional and they commonly ommited.
+
+{% highlight ruby %}
+3.times { print "Ruby!" }	# Ruby!Ruby!Ruby! => 3
+1.upto(9) { |x| print x }	# 123456789 => 1
+{% endhighlight %}
+
+`times` and `upto` are methods implemented by integer objects. They are special kind of method known as an *iterator*, and they behave like loops. The coide within curly braces --known as a *block*--is a associated with the method invocation and serves as the body of the loop. The use of iterators and blocks is another notable feauture of Ruby; although the language does support an ordinary `while` loop, it is more common to perform loops with constructs that are actually method calls.
+
+{% highlight ruby %}
+a = [1,2,3,4]		# => [1, 2, 3, 4]
+a[3] = a[2] - 1		# => 2
+a.each do |elt|
+	print elt+1
+end			# 2343 => [1, 2, 3, 2]
+{% endhighlight %}
+
+Various other useful iterators are defined on top of `each`:
+
+{% highlight ruby %}
+a = [1,2,3,4]			# => [1, 2, 3, 4]
+b = a.map {|x| x*x }		# => [1, 4, 9, 16]
+c = a.select {|x| x%2==0 }
+a.inject do |sum,x|
+	sum + x
+end				# => 10
+{% endhighlight %}
+
+Hashes, like arrays, are a fundamental data structure in Ruby. As their names implies, they are based on the hashtable data structure and serve to map arbitrary key objects to value objects. (To put this another way, we can say that a hash associates arbitrary value objects with key objects.) Hashes use square brackets, like arrays do, to query and set values in the hash. Instead of using an integer index, they expect key objects within the square brackets. Like the `Array` class, the `Hash` class also defines and `each` iterator method. This method invokes the associated block of code once for each key/value pair in the hash, and (this is where it differs from `Array`) passes both the key and the value as parameters to the block:
+
+{% highlight ruby %}
+h = {
+	:one => 1,
+	:two => 2
+}
+h[:one]
+h[:three] = 3
+h.each do |key,value|
+	print "#{value}:#{key};"
+end
 {% endhighlight %}
