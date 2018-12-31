@@ -19,7 +19,7 @@ icons:
   youtube: UC0dDIu9Ppa8BMXrNksA5oYA
 
 # Prettify url.
-permalink: pretty # /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 
 # Localizations.
 str_next: Next

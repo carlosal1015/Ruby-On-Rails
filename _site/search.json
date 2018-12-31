@@ -1,11 +1,11 @@
 [
 
 {
-"id": "-introduction-2018-12-31-introduction",
+"id": "-2018-12-31-introduction",
 "title": "Introduction to Ruby language",
 "author": null,
 "tags": ["hello-world"],
-"url": "/introduction/2018/12/31/introduction/",
+"url": "/2018/12/31/introduction/",
 "date": "2018-12-31",
 "content": "Hilbert’s spacesSea  que contiene todos los vectores  con una sucesión infinita de componentes. Este espacio es actualmente muy grande cuando no existe control en el tamaño de las componentes . Una idea mucho mejor es mantener la definición familiar de longitud, usando la suma de los cuadrados, e incluir solo aquellos vectores que tengan una longitud finita.Esta serie infinita debe converger a una suma finita. Vectores con longitud finita pueden ser sumados, multiplicados por escalares, así ellos forman un espacio vectorial. En este espacio de Hilbert es la forma natural de crecer el n煤mero de dimensiones hasta el infinito, y al mismo tiempo mantener la geometría ordinaria de un espacio euclidiano. Las elipses serán elipsoides de dimensión infinita, y rectas perpendiculares serán exactamente como antes. Los vectores  y  son ortogonales cuando su producto interno es cero:Hat’s functionsputs 'Hello World'"
 }
