@@ -1,11 +1,11 @@
 [
 
 {
-"id": "-fem-2018-12-25-finite_element_method",
-"title": "Finite element Method",
+"id": "-introduction-2018-12-25-finite_element_method",
+"title": "Introduction to Ruby language",
 "author": null,
-"tags": ["linear-algebra"],
-"url": "/fem/2018/12/25/finite_element_method/",
+"tags": ["hello-world"],
+"url": "/introduction/2018/12/25/finite_element_method/",
 "date": "2018-12-25",
 "content": "Hilbert’s spacesSea  que contiene todos los vectores  con una sucesión infinita de componentes. Este espacio es actualmente muy grande cuando no existe control en el tamaño de las componentes . Una idea mucho mejor es mantener la definición familiar de longitud, usando la suma de los cuadrados, e incluir solo aquellos vectores que tengan una longitud finita.Esta serie infinita debe converger a una suma finita. Vectores con longitud finita pueden ser sumados, multiplicados por escalares, así ellos forman un espacio vectorial. En este espacio de Hilbert es la forma natural de crecer el n煤mero de dimensiones hasta el infinito, y al mismo tiempo mantener la geometría ordinaria de un espacio euclidiano. Las elipses serán elipsoides de dimensión infinita, y rectas perpendiculares serán exactamente como antes. Los vectores  y  son ortogonales cuando su producto interno es cero:Hat’s functionsfunction grafica_hat(j, a, b, n, s)% n segmentosx = linspace(a, b, n + 1);if j == 1    xx = [x(1), x(2), x(n + 1)];    yy = [1, 0, 0];else    if j == n        xx = [x(1), x(n), x(n + 1)];        yy = [0, 0, 1];    else        xx = [x(1), x(j - 1), x(j), x(j + 1), x(n + 1)];        yy = [0, 0, 1, 0, 0];    endendplot(xx, yy, s)shgend"
 }, 

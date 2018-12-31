@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Finite element Method
-categories: fem
-tags: linear-algebra
-eye_catch: https://images.springer.com/sgw/books/medium/9783642332869.jpg
+title: Introduction to Ruby language
+categories: introduction
+tags: hello-world
+eye_catch: https://t4.ftcdn.net/jpg/01/34/41/35/240_F_134413529_K4TpMYLRsFeATEaGwVbScBOoDRLT0ysA.jpg
 mathjax: "true"
 ---
 
