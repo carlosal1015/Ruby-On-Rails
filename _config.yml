@@ -44,6 +44,7 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jemoji
+  - jekyll-admin
 #  - jekyll-multiple-languages-plugin
 # -jekyll-katex
 

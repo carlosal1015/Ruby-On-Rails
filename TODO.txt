@@ -1,0 +1,1 @@
+Actualizar los íconos Fontawesome y agregar el ícono de Telegram.
