@@ -224,7 +224,6 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rake (12.3.0)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -271,7 +270,6 @@ DEPENDENCIES
   jekyll-admin
   jekyll-feed
   jemoji
-  rake
 
 BUNDLED WITH
    1.17.2

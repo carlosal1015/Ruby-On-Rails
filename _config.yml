@@ -19,7 +19,9 @@ icons:
   youtube: UC0dDIu9Ppa8BMXrNksA5oYA
 
 # Prettify url.
-permalink: /:year/:month/:day/:title/
+permalink: pretty # /:categories/:year/:month/:day/:title/
+
+katex: true # Enable if using math markup
 
 # Localizations.
 str_next: Next
@@ -44,9 +46,8 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jemoji
-  - jekyll-admin
-#  - jekyll-multiple-languages-plugin
-# -jekyll-katex
+
+# - jekyll-multiple-languages-plugin
 
 # Styles: see "_sass/base/_variables.scss"
 # !! Danger zone !!
@@ -54,7 +55,6 @@ include: ["_pages"]
 
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
   input: GFM
   syntax_highlighter: rouge
 
@@ -65,12 +65,9 @@ sass:
   style: :compressed # or :expanded
 
 exclude:
-  - Gemfile
   - Gemfile.lock
-  - vendor
-  - Rakefile
-
-#katex:
-#    path_to_js: "./_plugins/katex.min.js"
-
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 #languages: ["en", "de", "es"]

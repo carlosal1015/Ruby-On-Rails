@@ -5,9 +5,4 @@ group :jekyll_plugins do
 	gem 'jekyll-feed'
 	gem 'jemoji'
 	gem 'jekyll-admin'
-	#	gem 'jekyll-multiple-languages-plugin'
-end
-
-group :development do
-  gem 'rake'
 end

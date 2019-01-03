@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
 <head>
+    {% include head.html %}
     {% capture title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endcapture %}
 
     {% include page-url-resolver.html page=page %}
@@ -42,8 +43,8 @@
     <link href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
 </head>
 <body>
-
-<header class="site-header">
+    {% include footer.html %}
+    <header class="site-header">
     <div class="inner clearfix">
         {% if site.avatar %}
         <a href="{{ '/' | prepend: site.baseurl }}">
@@ -79,6 +80,7 @@
             </ul>
             <ul class="icons">
                 {% include icons.html icons=site.icons %}
+                {% include kpop.html %}
             </ul>
             <hr class="with-no-margin margin-bottom"/>
 
@@ -103,7 +105,7 @@
 
 <footer class="site-footer">
     <div class="inner">
-        <span>Powered by Oromion.</a></span>
+        <span>Powered by </span><a href="https://khan.github.io/">Khan Academy</a><span> and Oromion.</span>
     </div>
 </footer>
 
@@ -118,6 +120,7 @@
 <script src="{{ '/assets/js/search.js' | prepend: site.baseurl }}"></script>
 {% endif %}
 
-{% include scripts.html %}
+{% include footer.html %}
+
 </body>
 </html>
